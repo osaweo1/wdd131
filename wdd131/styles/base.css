@@ -38,10 +38,14 @@ body{
 .header li{
     list-style: none;
 }
-.header a{
+.header nav a{
     text-decoration: none;
     font-size: 20px;
     color: #FBF8EF;
+    transition: .5s ease-in-out;
+}
+.header nav a:hover{
+    font-size:22px ;
 }
 main{
     display: flex;
@@ -63,7 +67,7 @@ main h1{
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
 }
-.cards{
+.card{
     
     border-radius: 10px;
     border:  1px solid #1D4D72;
