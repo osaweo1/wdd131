@@ -150,4 +150,7 @@ footer{
     font-weight: 300;
     margin-left: 100px;
 }
+.weather h2::after {
+    content: " ⛅";
+  }
 }
