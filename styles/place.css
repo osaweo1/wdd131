@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #008751; /* Nigeria green */
+  --secondary-color: #ffffff;
+  --text-color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+main{
+    padding: 10px;
+}
+.hero{
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+ 
+  margin-top: 8px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.card h2 {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 5px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.data ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  
+}
+
+.data li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.data li span:first-child {
+  font-weight: bold;
+}
+
+
+.weather p{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin: 10px;
+}
+.weather p span{
+    font-weight: 300;
+    margin-left: 160px;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+@media (min-width: 800px) {
+  .data {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 300px;
+  }
+  .weather {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 300px;
+
+  }
+  .hero source{
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .hero{
+    padding: 0;
+    margin:  0;
+  }
+  main{
+    margin: 0;
+  }
+  .weather p span{
+    font-weight: 300;
+    margin-left: 100px;
+}
+}
