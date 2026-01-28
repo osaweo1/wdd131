@@ -84,11 +84,8 @@ main{
 }
 
 .weather-icon {
-  shape-rendering: geometricPrecision;
-  text-rendering: geometricPrecision;
-  image-rendering: optimizeQuality;
-  fill-rule: evenodd;
-  clip-rule: evenodd;
+  width: 30px;
+  height: 30px;
 }
 
 .sun {
@@ -152,5 +149,8 @@ footer{
 }
 .weather h2::after {
     content: " ⛅";
+  }
+  .weather-icon{
+    display: none;
   }
 }
