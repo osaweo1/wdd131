@@ -83,6 +83,33 @@ main{
     margin-left: 160px;
 }
 
+.weather-icon {
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.sun {
+  fill: #ef6c00;
+}
+
+.sun-rays {
+  stroke: #ffa726;
+  stroke-width: 42;
+}
+
+.cloud-main {
+  fill: #26a69a;
+  fill-rule: nonzero;
+}
+
+.cloud-shadow {
+  fill: #229d91;
+  fill-rule: nonzero;
+}
+
 
 footer{
     background-color: var(--primary-color);
