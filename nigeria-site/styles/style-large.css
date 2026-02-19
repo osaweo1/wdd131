@@ -1,0 +1,494 @@
+:root {
+  --primary-color: #008751; /* Nigeria green */
+  --secondary-color: #ffffff;
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 10px 20px;
+}
+header .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: ;
+    gap: 20px;
+}
+
+header nav li{
+    list-style: none;
+}
+header nav li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+}
+header nav li a:hover{
+   border: 1px solid var(--secondary-color);
+   font-size:25px ;
+}
+nav li a.active{
+    font-weight: bold;
+    border: 1px solid var(--secondary-color);
+    
+}
+ header #closeButton{
+    display: none;
+  }
+header #menuButton{
+    display: none;
+  }
+.hero{
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 20%;
+    display: block;
+}
+.hero h1{
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+
+.hero .about-info{
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 20px;
+    height: 300px;
+    opacity: 50%;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s ease-in-out;
+}
+.hero .about-info:hover{
+    opacity: 100%;
+}
+.hero .about-info h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 10px;
+}
+.hero .about-info p{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.facts{
+    width: 100%;
+    height: 1;
+    position: relative;
+    text-align: center;
+
+}
+.facts h2{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    left: 43%;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.facts .factsContainer{
+    position: absolute;
+    top: 100px;
+    /* left: 300px; */
+    border: solid 3px var(--primary-color);
+    padding: 10px;
+   font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.facts img{
+    width: 100%;
+    opacity: 20%;
+    height: 300px;
+}
+
+#weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#weather h2{
+    font-size: 30px;
+    padding: 10px;
+    color: var(--primary-color);
+}
+#weather p{
+    font-size: 30px;
+}
+
+button {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px;
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.unity-section{
+    width: 100%;
+}
+.unity-section img{
+    width: 100%;
+}
+.unity-section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+
+
+/*  */
+.culture-section {
+    padding: 1.5rem;
+}
+
+.culture-section h2 {
+    background-color: #1b7a3c;
+    color: white;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Container */
+
+
+/* Image */
+.culture-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Text Content */
+.culture-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.culture-content li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Weather Card */
+.weather-card {
+    margin-top: 15px;
+    background-color: #1b7a3c;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+}
+.culture-container {
+         display: flex;
+        flex-direction: row;   
+        align-items: center;
+    }
+
+.culture-image,
+.culture-content {
+        flex: 1;
+    }
+
+.culture-content {
+        padding-left: 2rem;
+    }
+
+
+   /* geo page */
+
+    .geo-hero img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .geo-intro{
+    padding: 20px;
+    text-align: center;
+    }
+
+    .geo-intro h2{
+        color: var(--primary-color);
+        margin-bottom: 10px;    
+    }
+    .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns default */
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+
+/* culture page */
+.culture-hero{
+    position: relative;
+}
+
+.culture-hero img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+/* ===== MAIN SECTION (DESKTOP FIRST) ===== */
+
+.culture-main{
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+}
+
+.culture-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.culture-image{
+    flex: 1;
+}
+
+.culture-content{
+    flex: 1;
+}
+
+.culture-content h2{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.culture-content ul{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.culture-content li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.culture-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+/* contact page */
+
+.contact-hero{
+    position: relative;
+}
+
+.contact-hero img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.hero-text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.contact-container{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* Contact Info */
+.contact-info{
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h2{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form{
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+

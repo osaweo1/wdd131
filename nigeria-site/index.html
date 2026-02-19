@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="osawe osamudiamen">
+   
+    <meta name="descripton" content="Learn about Nigeria's culture, geography, and daily life.">
+    <link rel="stylesheet" href="/nigeria-site/styles/style-large.css">
+    <link rel="stylesheet" href="/nigeria-site/styles/style-small.css">
+    <script src="./script/index.js" defer></script>
+    
+    <title>Nigeria and culture| Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="coat of arm"> 
+        </div>
+        <nav>
+            <ul>
+                <img src="images/close.png" alt="" id="closeButton">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="geography.html">Geography</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <menu>
+
+            <img src="images/burger-bar.png" alt="" id="menuButton">
+        </menu>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Nigeria: Culture, Geography & Daily Life</h1>
+            <picture>
+                <source srcset="./images/hero-image2.jpg" media="(min-width: 800px)">
+                 <img src="./images/hero-image1.jpg" alt="Landscape of Nigeria" loading="lazy">
+            </picture>
+            <div class="about-info">
+                <h2>About Nigeria</h2>
+                <p>Nigeria is located on the west coast of Africa and is the most
+                     populous black country in the world, bordering the North Atlantic Ocean, between Benin and Cameroon. Nigeria covers 356,668 sq miles (923,7770 sq kilometers). It is about the same size as California, Nevada and Utah combined. Nigeria is diverse in people and culture. The history of the country goes back to 500 BC when the Nok people were the inhabitants. It was the ending of the 15th century European explorers and traders began their lucrative slave trade with the Yoruba and Benin peoples. In 1861 Lagos was colonized by the British and 1914, the entire country became 
+                    The Colony and Protectorate of Nigeria. Nigeria became independent in 1960.
+                </p>
+            </div>
+        </section>
+       <section class="facts">
+            <img src="./images/map.jpg" alt="" loading="lazy">
+            
+            <h2>Quick Facts</h2>
+            <div class="factsContainer"></div>
+           
+        </section>
+        <section id="weather">
+            <h2>Weather in Our Capital City</h2>
+            <p id="weatherOutput"></p>
+            <button id="weatherBtn">Check Weather</button>
+        </section>
+        <!-- <section class="unity-section">
+            <h2>Unity, Our Strenght</h2>
+            <img src="./images/hero-image1.jpg " alt="" loading="lazy"/>
+
+        </section> -->
+        <section class="culture-section">
+
+    <h2>Culture & Daily Life</h2>
+
+    <div class="culture-container">
+
+        <div class="culture-image">
+            <img src="images/cuture.jpg" alt="Traditional Nigerian dancers" loading="lazy">
+        </div>
+
+        <div class="culture-content">
+            <ul>
+                <li>Traditional Cuisine</li>
+                <li>Music & Dance</li>
+                <li>Over 250 Ethnic Groups</li>
+            </ul>
+
+            
+        </div>
+
+    </div>
+
+</section>
+    </main>
+    <footer>
+         <p>
+            &copy; <span id="currentyear"></span> 
+            Osawe Osamudiamen | Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
