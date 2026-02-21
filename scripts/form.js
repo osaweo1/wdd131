@@ -1,8 +1,8 @@
 const products = [
-    { id: "p1", name: "Smart Thermostat" },
+    { id: "p1", name: "Wireless Bluetooth" },
     { id: "p2", name: "Wireless Headphones" },
-    { id: "p3", name: "Gaming Laptop" },
-    { id: "p4", name: "Bluetooth Speaker" },
+    { id: "p3", name: "Playstation 5" },
+    { id: "p4", name: "Computer Mouse" },
     { id: "p5", name: "4K Monitor" }
 ];
 
@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
         display.textContent = `Total Reviews Submitted: ${count}`;
     }
 });
+
