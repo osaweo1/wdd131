@@ -70,7 +70,7 @@ menuButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   nav.classList.remove("open");
 });
-
+// 
 
 
 navLinks.forEach(link => {
